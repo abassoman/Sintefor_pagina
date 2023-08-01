@@ -12,9 +12,8 @@ a{
 .img-logo img {
     max-height: 50%;
     max-width: 50%;
-    object-fit: contain; /* Ajusta el comportamiento de la imagen */
+    object-fit: contain; 
 }
-
 
 .col-md-1{
     margin-top: 10px;
@@ -37,13 +36,29 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+p,a{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+div i{
+    font-size:20px;
+    color:#719F01;
+    padding-left: 5px;
+}
+
+div a i{
+    font-size:20px;
+    color:#ffffff;
+}
 /*--------------*/
 
 .nav{
     background-color: #54595F;
     color:#ffffff;
     text-align: center;
-    padding: 0.5rem 1rem;
+    --padding: 0.5rem 1rem;
 }
 
 
@@ -60,7 +75,7 @@ a{
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #ffffff; /* Puedes ajustar el color de fondo según tu diseño */
+    background-color: #ffffff;
 }
 
 
@@ -148,13 +163,12 @@ a{
     }
 }
 
-/* Aplicar la animación a los h2 y h4 */
 .contenido .carousel-caption h2 {
     animation: slideInFromTop 1s ease;
 }
 
 .contenido {
-    margin-top: 50px; /* Ajusta este valor según sea necesario */
+    margin-top: 10px; 
 }
 
 .nav-link{
@@ -224,11 +238,50 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centrar verticalmente el contenido */
+    justify-content: center; 
     text-align: center;
-    height: 100%; /* Asegurarse de que ocupe todo el espacio disponible en el div padre */
-    color: #FFFFFF; /* Establecer el color del texto */
+    height: 100%; 
+    color: #FFFFFF; 
 }
+
+/*PDF*/
+
+.info-pdf {
+    max-width: 1150px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.info-pdf h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.info-pdf h3 {
+    text-align: center; 
+    color: #7A7A7A;
+    font-family: "Poppins", Sans-serif;
+    font-weight: bold;
+}
+
+.info-pdf .col {
+    max-width: 100%; 
+    margin: 0 auto; 
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.info-pdf .col .card {
+    border: none;
+}
+
+.info-pdf .col .card-img-top {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/*------------*/
 
 .contenido-parrafo-contacto h4{
     font-family: "Poppins", sans-serif;
@@ -245,8 +298,32 @@ a{
 }
 
 
-.contenedor-boton {
-    margin-top: 20px; /* Espacio entre el texto y el botón */
+.contenido-info .contenedor-boton .boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #719F01;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.contenido-parrafo-contacto .contenedor-boton .boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #719F01;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
 }
 
 .contenedor-info {
@@ -265,20 +342,20 @@ a{
 }
 
 .contenido-info h4 {
-    --flex-basis: 100%;
+    flex-basis: 100%;
     color: #719F01;
     font-family: "Rubik", Sans-serif;
 }
 
 .contenido-info h2 {
-    --flex-basis: 100%;
+    flex-basis: 100%;
     font-family: "Poppins", Sans-serif;
     font-size: 36px;
     color: #565872;
 }
 
 .contenido-info p {
-    --flex-basis: 100%;
+    flex-basis: 100%;
     color: #565872;
     font-family: "Rubik", Sans-serif;
     font-size: 16px;
@@ -317,7 +394,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px; /* Ajusta la altura según tus necesidades */
+    height: 250px;
 }
 
 .contenido-parrafo .card .card-img {
@@ -331,7 +408,7 @@ a{
 }
 
 .contenido-parrafo .card .card-img img {
-    width: 65%; /* Ajusta el ancho según tus necesidades */
+    width: 65%;
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
@@ -449,7 +526,7 @@ a{
 .contenedor-videos .video-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 para el video */
+    padding-bottom: 56.25%; 
 }
 
 
@@ -462,14 +539,14 @@ a{
 }
 
 .contenedor-videos .card p {
-    margin-top: 10px; /* Espacio entre el video y el párrafo */
+    margin-top: 10px; 
     font-family: "Rubik", Sans-serif;
     font-weight: bold;
 }
 
 .div-imagen {
-    /* Establecer la altura de la sección */
-    height: 400px; /* Puedes ajustar esta altura según tus necesidades */
+
+    height: 400px;
     background-image: url("../img/Pulverización-2.jpg");
     background-size: cover;
     background-position: center;
@@ -478,8 +555,7 @@ a{
 
 
 .div-imagen-sanitizacion {
-    /* Establecer la altura de la sección */
-    height: 400px; /* Puedes ajustar esta altura según tus necesidades */
+    height: 400px; 
     background-image: url("../img/Pulverización-1.jpg");
     background-size: cover;
     background-position: center;
@@ -516,19 +592,16 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centrar verticalmente el contenido */
+    justify-content: center; 
     text-align: center;
-    height: 100%; /* Asegurarse de que ocupe todo el espacio disponible en el div padre */
-    color: #FFFFFF; /* Establecer el color del texto */
+    height: 100%; 
+    color: #FFFFFF; 
 }
-
-
-
 
 .contenedor-boton {
     position: relative;
-    height: 100px; /* Ajusta la altura del contenedor según tus necesidades */
-    --background-color: #F0F0F0; /* Color de fondo del contenedor */
+    height: 100px; 
+    --background-color: #F0F0F0; 
 }
 
 .contenido-info{
@@ -539,7 +612,7 @@ a{
     margin: 0;
 }
 
-.boton{
+.contenido-info .boton{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -553,7 +626,7 @@ a{
     text-transform: uppercase;
 }
 
-.boton:hover {
+.contenido-info .boton:hover {
     background-color: #144601;
     color: #ffffff;
 }
@@ -565,7 +638,6 @@ a{
     width: 100%;
     background-color: #0a1f09;
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
@@ -591,65 +663,65 @@ a{
     display: flex;
 }
 
-.footer .col-5, .col-7 {
-    padding: 10%;
+.footer .col-md-5, .col-md-7 {
+    padding: 5%;
 }
 
-.footer .col-5 img {
-    width: 80%;
-    max-height: 150px; /* Ajusta la altura máxima de la imagen */
-    object-fit: cover; /* Escalar la imagen para ajustarla al contenedor */
+.footer .col-md-5 img {
+    --width: 80%;
+    --max-height: 150px;
+    object-fit: cover;
     padding-bottom: 25px;
 }
 
-.footer .col-5 h5, .col-5 ul {
-    text-align: left; /* Alinea el texto y la lista a la izquierda */
-    list-style: none; /* Quita los puntos de la lista */
-    padding-left: 0; /* Quita el relleno predeterminado de la lista */
+.footer .col-md-5 h5, .col-md-5 ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
     font-family: "Poppins", Sans-serif;
 }
 
-.footer .col-5 li {
-    display: flex; /* Aplica flexbox a los elementos li */
-    align-items: center; /* Alinea verticalmente el contenido de los li */
-    margin-bottom: 10px; /* Agrega espacio entre los elementos li */
+.footer .col-md-5 li {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.footer .col-5 i {
-    color: white; /* Establece el color de los íconos en blanco */
-    margin-right: 10px; /* Agrega espacio entre el ícono y el texto */
+.footer .col-md-5 i {
+    color: white;
+    margin-right: 10px;
 }
 
-.footer .col-7 h3, .col-7 ul {
-    text-align: left; /* Alinea el texto y la lista a la izquierda */
-    list-style-type: disc; /* Agrega puntos a la lista de col-7 */
-    padding-left: 20px; /* Añade relleno para que los puntos tengan espacio */
+.footer .col-md-7 h3, .col-md-7 ul {
+    text-align: left; 
+    list-style-type: disc; 
+    padding-left: 20px; 
     font-family: "Poppins", Sans-serif;
 }
 
-.footer .col-7 li {
-    margin-bottom: 10px; /* Añade espacio entre los elementos de la lista */
+.footer .col-md-7 li {
+    margin-bottom: 10px;
 }
 
-.footer .col-7 a {
+.footer .col-md-7 a {
     color: white;
     text-decoration: none;
     font-family: "Poppins", Sans-serif;
 }
 
 
-.footer .col-5 h4,
-.footer .col-5 li {
-  padding: 5px; /* Ajusta el valor del padding según lo desees */
+.footer .col-md-5 h4,
+.footer .col-md-5 li {
+    padding: 5px; 
 }
 
 /* Estilos para el h3 y li en el div.col-7 */
-.footer .col-7 h3,
-.footer .col-7 li {
-  padding: 5px; /* Ajusta el valor del padding según lo desees */
+.footer .col-md-7 h3,
+.footer .col-md-7 li {
+    padding: 5px; 
 }
 
-.footer .col-7 a:hover {
+.footer .col-md-7 a:hover {
     color: #719F01;
 }
 
@@ -662,10 +734,10 @@ a{
 /*Sanitizacion*/
 
 .contenido-sanitizacion .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg');
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -739,8 +811,8 @@ a{
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 15px; /* Espaciado inferior */
+    line-height: 1.6; 
+    margin-bottom: 15px; 
 }
 
 .contenido-sanitizacion .boton-sanitizacion:hover {
@@ -755,10 +827,10 @@ a{
 /*Desinsectación*/
 
 .contenido-desinsectacion .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -803,7 +875,7 @@ a{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Agrega el sombreado aquí */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF;
 }
 
@@ -886,10 +958,10 @@ a{
 /*Desratización*/
 
 .contenido-desratizacion .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -963,8 +1035,8 @@ a{
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 15px; /* Espaciado inferior */
+    line-height: 1.6; 
+    margin-bottom: 15px;
 }
 
 .contenido-desratizacion .boton-desratizacion:hover {
@@ -979,10 +1051,10 @@ a{
 /*Control de Acaros*/
 
 .contenido-acaros .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg');
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -1056,8 +1128,8 @@ a{
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 15px; /* Espaciado inferior */
+    line-height: 1.6; 
+    margin-bottom: 15px; 
 }
 
 .contenido-acaros .boton-acaros:hover {
@@ -1078,10 +1150,10 @@ a{
 /*Servicios Forestales*/
 
 .contenido-servicios .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%;
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -1239,10 +1311,10 @@ a{
 
 
 .contenido-ventas .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -1296,13 +1368,13 @@ a{
 }
 
 .contenido-ventas .info-ventas {
-    max-width: 1100px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 1100px; 
     text-align: center;
 }
 
 .contenido-ventas .info-ventas p {
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6; 
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1342,10 +1414,10 @@ a{
 /*Nosotros*/
 
 .contenido-nosotros .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -1397,13 +1469,13 @@ a{
 }
 
 .contenido-nosotros .info-nosotros {
-    max-width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 900px; 
     --text-align: center;
 }
 
 .contenido-nosotros .info-nosotros p {
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6; 
     margin: 0;
     padding-top: 15px;
     color:#54595F;
@@ -1423,7 +1495,7 @@ a{
 
 .imagenes-nosotros {
     max-width: 1000px;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1486,49 +1558,48 @@ a{
     object-fit: cover;
 }
 
-.imagenes-clientes{
-    max-width: 1000px;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    text-align: center;
-}
-
-.imagenes-clientes h3{
-    color: #719F01;
-    font-family: "Rubik", Sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    padding-top: 2%;
-    padding-bottom: 5%;
-
+.imagenes-clientes {
+    max-width: 1150px;
+    margin: 0 auto; 
+    padding: 10px;
 }
 
 .imagenes-clientes h2{
-    color: #54595F;
-    font-family: "Poppins", Sans-serif;
-    font-size: 36px;
-    font-weight: 700;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.imagenes-clientes h3,
-.imagenes-clientes h2 {
-    margin: 0;
+.imagenes-clientes h6 {
+    text-align: center; 
+    color: #7A7A7A;
+    font-family: "Poppins", Sans-serif;
+    font-weight: bold;
 }
 
+.imagenes-clientes .col {
+    max-width: 100%; 
+    margin: 0 auto; 
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
-.imagenes-clientes .carousel-img {
-  width: 300px; /* Tamaño de ancho deseado */
-  height: 200px; /* Tamaño de alto deseado */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin perder proporciones */
+.imagenes-clientes .col .card {
+    border: none;
+}
+
+.imagenes-clientes .col .card-img-top {
+    max-width: 200px;
+    max-height: 100px;
 }
 
 /*Pagos*/
 
 .contenido-pagos .div-imagen-hoja {
-    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-image: url('../img/Hojas-fondo.jpg'); 
     background-size: cover;
     background-position: center;
-    padding: 5%; /* Ajusta el padding según tus necesidades */
+    padding: 5%; 
     color: #54595F;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
@@ -1582,7 +1653,7 @@ a{
 }
 
 .contenido-pagos .info-pagos {
-    max-width: 700px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 700px; 
     
 }
 
@@ -1613,42 +1684,117 @@ a{
     margin-top: 5%;
 }
 
+/*Contacto*/
+
+.contenido-contacto .div-imagen-hoja {
+    background-image: url('../img/Hojas-fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 5%; 
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenido-contacto .div-imagen-hoja h2 {
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido-contacto .div-imagen-hoja h3 {
+    color: #719F01;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.contenido-contacto .contenido-info-contacto {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    margin-top: -20px;
+}
+
+.contenido-contacto .info-contacto {
+    flex: 3;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.contenido-contacto .contenido-info-contacto {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenido-contacto .info-contacto {
+    max-width: 700px; 
+}
+
+.contenido-contacto .info-contacto h5{
+    text-align: center;
+}
+
+.contenido-contacto .info-contacto p {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contenido-contacto .info-contacto {
+    text-align: center;
+}
+
+.contenido-contacto .boton{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #719F01;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contenido-contacto .boton:hover {
+    background-color: #144601;
+    color: #ffffff;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .div-con-imagen-de-fondo {
         background-size: contain;
     }
 }
 
-@media screen and (min-width: 821px) {
-    p,a{
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    div i{
-        font-size:20px;
-        color:#719F01;
-        padding-left: 5px;
-        
-    }
-    div a i{
-        font-size:20px;
-        color:#ffffff;
-    }
-
-}
-
-@media screen and (max-width: 820px) {
-    p,a{
-        font-size: 12px;
-    }
-    i{
-        font-size:25px;
-    }
-
-    .img_cont{
-        display: none;
+@media (max-width: 768px) {
+    .header-permanent{
+        display: none; 
     }
 }
+
 
 @media screen and (max-width: 767px) {
     p,a{
