@@ -1,4 +1,6 @@
-
+a{
+    border-radius: 5px;
+}
 
 .img-logo {
     display: flex;
@@ -63,9 +65,92 @@
 
 
 .contenido .carousel-image {
-    width: 500px; /* Establece el ancho deseado */
-    height: 500px; /* Establece la altura deseada */
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el área designada */
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.contenido .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%);
+    width: 30%; 
+    --background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    color: #ffffff; 
+}
+
+.contenido .align-right .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 60%; 
+    transform: translateY(-50%);
+    width: 30%; 
+    --background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    color: #ffffff; 
+}
+
+.contenido .carousel-caption h2{
+    padding: 3%;
+    background-color: #719F01; 
+    color: #ffffff;
+    text-align: left;
+    margin: 10px;
+    --font-family: Poppins;
+    --font-size: 61px;
+    font-weight: 800;
+}
+
+.contenido .carousel-caption h4{
+    padding: 3%;
+    background-color: #144601; 
+    color: #ffffff;
+    text-align: left;
+    margin: 10px;
+    --font-family: Poppins;
+    --font-size: 28px;
+    font-weight: 400;
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contenido .carousel-caption h4 {
+    animation: fadeInFromLeft 1s ease;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Aplicar la animación a los h2 y h4 */
+.contenido .carousel-caption h2 {
+    animation: slideInFromTop 1s ease;
 }
 
 .contenido {
@@ -145,16 +230,20 @@
     color: #FFFFFF; /* Establecer el color del texto */
 }
 
-.contenido-parrafo-contacto h4,
-.contenido-parrafo-contacto h2 {
+.contenido-parrafo-contacto h4{
     font-family: "Poppins", sans-serif;
     color: #719F01;
+}
+
+.contenido-parrafo-contacto h1{
+    font-family: "Poppins", sans-serif;
 }
 
 .contenido-parrafo-contacto p {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
 }
+
 
 .contenedor-boton {
     margin-top: 20px; /* Espacio entre el texto y el botón */
@@ -263,7 +352,6 @@
 }
 
 .contenido-parrafo .card .card-body {
-    /* height: 30%; */ /* Comenta o elimina esta línea */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +470,7 @@
 .div-imagen {
     /* Establecer la altura de la sección */
     height: 400px; /* Puedes ajustar esta altura según tus necesidades */
-    background-image: url("../img/Pulverización_Exterior.jpg");
+    background-image: url("../img/Pulverización-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -392,16 +480,21 @@
 .div-imagen-sanitizacion {
     /* Establecer la altura de la sección */
     height: 400px; /* Puedes ajustar esta altura según tus necesidades */
-    background-image: url("../img/Pulverización_Exterior.jpg");
+    background-image: url("../img/Pulverización-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.div-imagen-sanitizacion h5,
-.div-imagen-sanitizacion h2 {
-    font-family: "Poppins", sans-serif;
+.div-imagen-sanitizacion h6{
+    font-family: "Rubik", sans-serif;
     color: #719F01;
+    font-weight: bold;
+}
+
+.div-imagen-sanitizacion h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
 .div-imagen-sanitizacion .boton{
@@ -416,6 +509,7 @@
     text-decoration: none;
     white-space: nowrap;
     text-transform: uppercase;
+    margin-top: 15%;
 }
 
 .div-imagen-sanitizacion .contenido-parrafo-sanitizacion{
@@ -563,7 +657,6 @@
     color: gray;
     text-decoration: none;
     text-align: left;
-    
 }
 
 /*Sanitizacion*/
@@ -1062,7 +1155,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.6; 
-    --margin-bottom: 15px; 
+    --margin-bottom: 15px;
 }
 
 .contenido-servicios .boton-servicios:hover {
@@ -1119,16 +1212,16 @@
 
 .servicios-contacto h3 {
     margin-top: 20px;
-    margin-bottom: 20px; /* Ajusta la cantidad de espacio inferior que deseas */
+    margin-bottom: 20px; 
 }
 
 .servicios-contacto h2 {
     font-weight: bold;
-    margin-bottom: 30px; /* Ajusta la cantidad de espacio inferior que deseas */
+    margin-bottom: 30px; /
 }
 
 .servicios-contacto p {
-    margin-bottom: 40px; /* Ajusta la cantidad de espacio inferior que deseas */
+    margin-bottom: 40px; 
 }
 
 .servicios-contacto h3{
@@ -1142,6 +1235,383 @@
     color: #565872;
 } 
 
+/*Ventas*/
+
+
+.contenido-ventas .div-imagen-hoja {
+    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 5%; /* Ajusta el padding según tus necesidades */
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenido-ventas .div-imagen-hoja h2 {
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido-ventas .div-imagen-hoja h3 {
+    color: #719F01;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.contenido-ventas .contenido-info-ventas {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    margin-top: -20px;
+}
+
+.contenido-ventas .info-ventas {
+    flex: 3;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.contenido-ventas .contenido-info-ventas {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenido-ventas .info-ventas {
+    max-width: 1100px; /* Ajusta el ancho máximo según tus necesidades */
+    text-align: center;
+}
+
+.contenido-ventas .info-ventas p {
+    font-size: 16px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.informacion-ventas {
+    max-width: 1150px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.informacion-ventas h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.informacion-ventas h6 {
+    text-align: center; 
+    color: #7A7A7A;
+    font-family: "Poppins", Sans-serif;
+    font-weight: bold;
+}
+
+.informacion-ventas .col {
+    max-width: 100%; 
+    margin: 0 auto; 
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.informacion-ventas .col .card {
+    border: none;
+}
+
+/*Nosotros*/
+
+.contenido-nosotros .div-imagen-hoja {
+    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 5%; /* Ajusta el padding según tus necesidades */
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenido-nosotros .div-imagen-hoja h2 {
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido-nosotros .div-imagen-hoja h3 {
+    color: #719F01;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.contenido-nosotros .contenido-info-nosotros {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+
+}
+
+.contenido-nosotros .info-nosotros {
+    flex: 3;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+
+.contenido-nosotros .contenido-info-nosotros {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenido-nosotros .info-nosotros {
+    max-width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+    --text-align: center;
+}
+
+.contenido-nosotros .info-nosotros p {
+    font-size: 16px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+    padding-top: 15px;
+    color:#54595F;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.contenido-nosotros .info-nosotros h4 {
+    color: #719F01;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.imagenes-nosotros-fondo{
+    background-color: #F7F7F7;
+}
+
+.imagenes-nosotros {
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center;
+}
+
+.imagenes-nosotros h3{
+    color: #719F01;
+    font-family: "Rubik", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+
+.imagenes-nosotros h2{
+    color: #54595F;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 5%;
+}
+
+.imagenes-nosotros h3,
+.imagenes-nosotros h2 {
+    margin: 0;
+}
+
+.imagenes-nosotros .row-cols-1 .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    transition: transform 0.5s ease;
+}
+
+.imagenes-nosotros .row-cols-1 .col:hover {
+    transform: translateY(-15px);
+}
+
+.imagenes-nosotros .card.h-100{
+    padding: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-nosotros .card-body h5{
+    font-family: "Rubik", Sans-serif;
+    font-size: 23px;
+    color: #54595F;
+    font-weight: bold;
+}
+
+.imagenes-nosotros .card-body p{
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+
+.imagenes-nosotros .rounded-image {
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.imagenes-clientes{
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center;
+}
+
+.imagenes-clientes h3{
+    color: #719F01;
+    font-family: "Rubik", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 2%;
+    padding-bottom: 5%;
+
+}
+
+.imagenes-clientes h2{
+    color: #54595F;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 5%;
+}
+
+.imagenes-clientes h3,
+.imagenes-clientes h2 {
+    margin: 0;
+}
+
+
+.imagenes-clientes .carousel-img {
+  width: 300px; /* Tamaño de ancho deseado */
+  height: 200px; /* Tamaño de alto deseado */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin perder proporciones */
+}
+
+/*Pagos*/
+
+.contenido-pagos .div-imagen-hoja {
+    background-image: url('../img/Hojas-fondo.jpg'); /* Reemplaza 'ruta-de-la-imagen.jpg' por la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 5%; /* Ajusta el padding según tus necesidades */
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenido-pagos .div-imagen-hoja h2 {
+    color: #54595F;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contenido-pagos .div-imagen-hoja h3 {
+    color: #719F01;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.contenido-pagos .contenido-info-pagos {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    margin-top: -20px;
+}
+
+.contenido-pagos .info-pagos {
+    flex: 3;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.contenido-pagos .contenido-info-pagos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenido-pagos .info-pagos {
+    max-width: 700px; /* Ajusta el ancho máximo según tus necesidades */
+    
+}
+
+.contenido-pagos .info-pagos h5{
+    text-align: center;
+}
+
+.contenido-pagos .info-pagos p {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contenido-pagos .boton{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #719F01;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
 
 @media screen and (max-width: 768px) {
     .div-con-imagen-de-fondo {
