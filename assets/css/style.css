@@ -265,20 +265,20 @@ a{
 }
 
 .contenido-info h4 {
-    flex-basis: 100%;
+    --flex-basis: 100%;
     color: #719F01;
     font-family: "Rubik", Sans-serif;
 }
 
 .contenido-info h2 {
-    flex-basis: 100%;
+    --flex-basis: 100%;
     font-family: "Poppins", Sans-serif;
     font-size: 36px;
     color: #565872;
 }
 
 .contenido-info p {
-    flex-basis: 100%;
+    --flex-basis: 100%;
     color: #565872;
     font-family: "Rubik", Sans-serif;
     font-size: 16px;
