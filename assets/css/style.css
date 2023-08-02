@@ -301,13 +301,13 @@ div a i{
 }
 
 .info-pdf .col a{
-    color: rgb(0, 0, 0);
+    color:  #719F01;
     text-decoration: none;
     font-family: "Poppins", Sans-serif;
 }
 
 .info-pdf .col a:hover {
-    color: #719F01;
+    color: #144601;
 }
 
 /*------------*/
