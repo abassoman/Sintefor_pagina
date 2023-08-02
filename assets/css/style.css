@@ -466,6 +466,10 @@ div a i{
     padding-top: 12%;
 }
 
+#documentos_rapidos:target {
+    padding-top: 12%;
+}
+
 .contenedor-videos .card{
     border: none;
     padding: 0;
