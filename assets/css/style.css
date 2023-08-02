@@ -717,6 +717,16 @@ div a i{
     font-family: "Poppins", Sans-serif;
 }
 
+.info-pdf .col a{
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+}
+
+.info-pdf .col a:hover {
+    color: #719F01;
+}
+
 .footer .col-md-5 a {
     color: white;
     text-decoration: none;
