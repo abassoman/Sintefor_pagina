@@ -70,6 +70,13 @@ div a i{
     padding-bottom: 1%;
 }
 
+.header-permanent .col-md-4{
+    padding-top: 10px;
+}
+
+.header-permanent .col-md-2{
+    padding-top: 10px
+}
 
 .header-active {
     position: sticky;
