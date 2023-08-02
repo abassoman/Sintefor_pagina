@@ -296,6 +296,20 @@ div a i{
     max-height: 100px;
 }
 
+.info-pdf .card .h-100 i{
+    background-color: #F0F0F0;
+}
+
+.info-pdf .col a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+}
+
+.info-pdf .col a:hover {
+    color: #719F01;
+}
+
 /*------------*/
 
 .contenido-parrafo-contacto h4{
@@ -728,15 +742,7 @@ div a i{
     font-family: "Poppins", Sans-serif;
 }
 
-.info-pdf .col a{
-    color: white;
-    text-decoration: none;
-    font-family: "Poppins", Sans-serif;
-}
 
-.info-pdf .col a:hover {
-    color: #719F01;
-}
 
 .footer .col-md-5 a {
     color: white;
