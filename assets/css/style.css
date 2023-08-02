@@ -257,6 +257,10 @@ div a i{
 
 /*PDF*/
 
+.contenedor-pdf{
+    background-color: #F0F0F0;
+}
+
 .info-pdf {
     max-width: 1150px;
     margin: 0 auto; 
