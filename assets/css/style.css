@@ -78,6 +78,10 @@ div a i{
     background-color: #ffffff;
 }
 
+.header-active .contacto h5{
+    color: #719F01;
+}
+
 
 .contenido .carousel-image {
     width: 500px; 
