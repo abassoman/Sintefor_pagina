@@ -1857,11 +1857,11 @@ div a i{
     color: #ffffff;
 }
 
-
-.contenido-contacto .div-imagen-hoja a{
-    text-decoration: none;
-    color: #719F01;
+.contenido-maps{
+    width: 100%;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .div-con-imagen-de-fondo {
