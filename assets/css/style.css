@@ -696,73 +696,103 @@ div a i{
     display: flex;
 }
 
-.footer .col-md-5, .col-md-7 {
+.footer .col-md-4 {
     padding: 5%;
 }
 
-.footer .col-md-5 img {
+.footer .col-md-4 .columna-logo img {
     --width: 80%;
     --max-height: 150px;
     object-fit: cover;
     padding-bottom: 25px;
 }
 
-.footer .col-md-5 h5, .col-md-5 ul {
+.footer .col-md-4 .columna-logo h5, .col-md-4 .columna-logo ul {
     text-align: left;
     list-style: none;
     padding-left: 0;
     font-family: "Poppins", Sans-serif;
 }
 
-.footer .col-md-5 li {
+.footer .col-md-4 .columna-logo li {
     display: flex; 
     align-items: center;
     margin-bottom: 10px;
 }
 
-.footer .col-md-5 i {
+.footer .col-md-4 .columna-logo i {
     color: white;
     margin-right: 10px;
 }
 
-.footer .col-md-7 h3, .col-md-7 ul {
+.footer .col-md-4 .columna-logo a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+}
+
+.footer .col-md-4 .footer-servicios h3, .col-md-4 .footer-servicios ul {
     text-align: left; 
     list-style-type: disc; 
     padding-left: 20px; 
     font-family: "Poppins", Sans-serif;
 }
 
-.footer .col-md-7 li {
+.footer .col-md-4 .footer-servicios li {
     margin-bottom: 10px;
 }
 
-.footer .col-md-7 a {
+.footer .col-md-4 .footer-servicios a {
     color: white;
     text-decoration: none;
     font-family: "Poppins", Sans-serif;
 }
 
-
-
-.footer .col-md-5 a {
-    color: white;
-    text-decoration: none;
-    font-family: "Poppins", Sans-serif;
-}
-
-
-.footer .col-md-5 h4,
-.footer .col-md-5 li {
+.footer .col-md-4 .footer-servicios h4,
+.footer .col-md-4 .footer-servicios li {
     padding: 5px; 
 }
 
 /* Estilos para el h3 y li en el div.col-7 */
-.footer .col-md-7 h3,
-.footer .col-md-7 li {
+.footer .col-md-4 .footer-servicios h3,
+.footer .col-md-4 .footer-servicios li {
     padding: 5px; 
 }
 
-.footer .col-md-7 a:hover {
+.footer .col-md-4 .footer-servicios a:hover {
+    color: #719F01;
+}
+
+/**/
+.footer .col-md-4 .footer-documentos h3, .col-md-4 .footer-documentos ul {
+    text-align: left; 
+    list-style-type: disc; 
+    padding-left: 20px; 
+    font-family: "Poppins", Sans-serif;
+}
+
+.footer .col-md-4 .footer-documentos li {
+    margin-bottom: 10px;
+}
+
+.footer .col-md-4 .footer-documentos a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+}
+
+.footer .col-md-4 .footer-documentos h4,
+.footer .col-md-4 .footer-documentos li {
+    padding: 5px; 
+}
+
+/* Estilos para el h3 y li en el div.col-7 */
+.footer .col-md-4 .footer-documentos h3,
+.footer .col-md-4 .footer-documentos li {
+    padding: 5px; 
+}
+
+.footer .col-md-4 .footer-documentos a:hover {
     color: #719F01;
 }
 
@@ -1535,7 +1565,7 @@ div a i{
 }
 
 .imagenes-nosotros {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -1577,7 +1607,7 @@ div a i{
 
 .imagenes-nosotros .card.h-100{
     padding: 10%;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -1597,6 +1627,13 @@ div a i{
 .imagenes-nosotros .rounded-image {
     border-radius: 50%; 
     object-fit: cover;
+}
+.imagenes-nosotros .card-img-top {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin: 0 auto; 
 }
 
 .imagenes-clientes {
@@ -1817,9 +1854,18 @@ div a i{
     margin-bottom: 5%;
 }
 
+.contenido-contacto .div-imagen-hoja a{
+    text-decoration: none;
+    color: #719F01;
+}
+
 .contenido-contacto .boton:hover {
     background-color: #144601;
     color: #ffffff;
+}
+
+.contenido-maps{
+    width: 100%;
 }
 
 
