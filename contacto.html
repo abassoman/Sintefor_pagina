@@ -99,17 +99,16 @@
             <div class="contenido-info-contacto">
                 <div class="info-contacto">
                     <p>Envíanos un mensaje:</p>
-                    <form id="contactForm">
-                        <label for="nombre">Nombre:</label>
+                    <form id="contactForm" action="https://formsubmit.co/alan.m.basso@gmail.com" method="POST">
+                        <label for="nombre">Nombre: </label>
                         <input type="text" id="nombre" name="nombre" required><br>
-            
-                        <label for="asunto">Asunto:</label>
+                        <label for="asunto">Asunto: </label>
                         <input type="text" id="asunto" name="asunto" required><br>
-            
-                        <label for="comentario">Comentario:</label>
+                        <label for="comentario">Comentario: </label>
                         <textarea id="comentario" name="comentario" rows="4" required></textarea><br>
-            
                         <input type="submit" value="Enviar">
+                        <input type="hidden" name="_next" value="https://abassoman.github.io/Sintefor_pagina/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
