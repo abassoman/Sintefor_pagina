@@ -98,10 +98,23 @@
             </div>
             <div class="contenido-info-contacto">
                 <div class="info-contacto">
-                    <p>Haz clic en el botón para enviar un correo electrónico a nosotros:</p>
-                    <a href="mailto:sintefor@gmail.com?subject=Correo de Contacto" target="_blank" class="boton">
-                        Enviar Correo
-                    </a>
+                    <h3>
+                        Envíanos un mensaje 
+                    </h3>
+                    <h4>
+                        Rellene el formulario para contactarnos
+                    </h4>
+                    <form id="contactForm" action="https://formsubmit.co/ac756eb5962f0c85ba788e2620ae37fb" method="POST">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="off" required><br>
+                        <label for="asunto">Asunto: </label>
+                        <input type="text" id="asunto" value="Consulta - Cotización" placeholder="Consulta - Cotización" name="asunto" autocomplete="off" required><br>
+                        <label for="comentario">Comentario: </label>
+                        <textarea id="comentario" name="comentario" rows="4" autocomplete="off" required></textarea><br>
+                        <input class="boton" type="submit" value="Enviar">
+                        <input type="hidden" name="_next" value="https://sintefor.cl/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
                 </div>
             </div>
         </div>
